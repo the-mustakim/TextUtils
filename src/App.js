@@ -48,7 +48,7 @@ function App() {
       <Alert alert={alert}/> 
       <div className="container my-3">
       {/* <Switch> */}
-          {/* <Route exact path="/about" component={About}>  */} */}
+          {/* <Route exact path="/about" component={About}>  */}
               {/* <About/> */}
           {/* </Route>
           <Route exact path="/" component={TextForm}>   */}
