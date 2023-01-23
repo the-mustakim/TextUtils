@@ -1,11 +1,11 @@
 //import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
-//import About from './components/About';
+import About from './components/About';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-//import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 
 function App() {
 
@@ -45,16 +45,16 @@ function App() {
   return (
   <>
       <Navbar title="TextUtils" aboutText="About" mode={mode} toggle={toggleMode}/>
-      <Alert alert={alert}/> 
+      <Alert alert={alert}/>
       <div className="container my-3">
-      {/* <Switch> */}
-          {/* <Route exact path="/about" component={About}>  */}
-              {/* <About/> */}
-          {/* </Route>
-          <Route exact path="/" component={TextForm}>   */}
-              <TextForm heading="Enter the Text To  Analyze" mode={mode} showAlert={showAlert}></TextForm>
-          {/* </Route> */}
-      {/* </Switch> */}
+      <Switch>
+          <Route path="/about" component={About}> 
+              <About mode={mode}/>
+          </Route>
+          <Route path="/" component={TextForm}>  
+              <TextForm heading="TestUtils- Word Counter, Character Counter, Remove Extra Spaces" mode={mode} showAlert={showAlert}></TextForm>
+          </Route>
+      </Switch>
       </div>
   </>
   );
