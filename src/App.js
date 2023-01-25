@@ -52,7 +52,7 @@ function App() {
               <About mode={mode}/>
           </Route>
           <Route path="/" component={TextForm}>  
-              <TextForm heading="TestUtils- Word Counter, Character Counter, Remove Extra Spaces" mode={mode} showAlert={showAlert}></TextForm>
+              <TextForm heading="TextUtils- Word Counter, Character Counter, Remove Extra Spaces" mode={mode} showAlert={showAlert}></TextForm>
           </Route>
       </Switch>
       </div>
